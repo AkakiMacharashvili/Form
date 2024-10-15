@@ -1,0 +1,217 @@
+.body {
+	background-color: rgb(199, 199, 199);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.main {	
+	width: 50%;
+	
+	border-radius: 5px;
+	background-color: white;	
+}
+
+.form {
+	text-align: center;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.enterName {
+	position: relative;
+	left: 5%;
+}
+
+.inputName {
+	width: 90%;
+	height: 27px;
+	border-radius: 5px;
+}
+
+.enterEmail{
+	position: relative;
+	top: 15px;
+	left: 5%;
+}
+
+.inputEmail {
+	width: 90%;
+	height: 27px;
+	border-radius: 5px;
+}
+
+.enterPassword {
+	position: relative;
+	top: 30px;
+	left: 5%;
+}
+
+.inputPassword {
+	width: 90%;
+	height: 27px;
+	border-radius: 5px;
+}
+
+.enterConfirm {
+	position: relative;
+	top: 45px;
+	left: 5%;
+}
+
+.inputConfirm {
+	width: 90%;
+	height: 27px;
+	border-radius: 5px;
+}
+
+.gen {
+	position: relative;
+	top:45px;
+	left: 5%;
+}
+
+.gend {
+	display: flex;
+	flex-direction: row;
+}
+
+.m {
+	position: relative;
+	top: 15.7px;
+	left: 9%;
+}
+
+.f {
+	position: relative;
+	top: 15.7px;
+	left: 18%;
+}
+
+.o {
+	position: relative;
+	top: 15.7px;
+	left: 27%;
+}
+
+
+
+.enterGender{
+	position: relative;
+	top: 28px;
+	left: 8%;
+}
+
+.f1 {
+	position: relative;
+	left: 10%;
+}
+
+.o1 {
+	position: relative;
+	left: 22.7%;
+}
+
+.enterInterest {
+	position: relative;
+	bottom: 5px;
+	left: 5%;
+}
+
+.i1{
+	position: relative;
+	left: 3px;
+}
+
+.i2 {
+	position: relative;
+	left: 10.4%;
+}
+
+.i3 {
+	position: relative;
+	left: 23.5%;
+}
+
+.category {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	bottom: 25px;
+}
+
+.c1 {
+	position: relative;
+	left: 9.3%;
+}
+
+.c2 {
+	position: relative;
+	left: 16.5%;
+}
+
+.c3 {
+	position: relative;
+	left: 27%;
+}
+
+.inputInterest {
+	position: relative;
+	bottom: 15px;
+	left: 8%;
+}
+
+
+.enterCountry {
+	position: relative;
+	bottom: 20px;
+	left: 5%;
+}
+
+.inputCountry {
+	width: 90%;
+	height: 27px;
+	border-radius: 5px;
+}
+
+
+.SlidePointer {
+	position: relative;
+	width: 90%;
+	left: 5%;
+	bottom: 10px;
+}
+
+.slider {
+	position: relative;
+	-webkit-appearance: none;
+	appearance: none;
+	width: 99%;
+	height: 5px;
+	background: rgb(209, 209, 209);
+	
+}
+
+.value {
+	position: relative;
+	bottom: 15px;
+}
+
+.enter {
+	position: relative;
+	bottom: 30px;
+	left: 5%;
+}
+
+.Submit {
+	width: 90%;
+	color: white;
+	font-size: 15px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: rgb(66, 66, 255);
+}
+
+.Submit:hover {
+	background-color: green;
+}

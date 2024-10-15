@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="Form.css">
+</head>
+<body class="body">
+	<form class="main">
+		<h1 class="form">Form</h1>
+
+		<div class="enterName">
+			<label for = "name">Name:</label><br>
+			<input type="text" id = "name" name="name" minlength="3" required class="inputName"><br>	
+		</div>
+
+		<div class="enterEmail">
+			<label for = "email">Email:</label><br>
+			<input type="text" id = "email" name="email" required class="inputEmail"><br>	
+		</div>
+
+		<div class="enterPassword">
+			<label for = "password">Password:</label><br>
+			<input type="password" id = "password" name="password" required class="inputPassword"><br>
+		</div>
+
+		<div class="enterConfirm">
+			<label for = "confirm">Confirm Password:</label><br>
+			<input type="password" id = "confirm" name="confirm" class="inputConfirm"><br>
+		</div>
+
+		<p class="gen">Gender:</p>
+
+		<div class = "enterGender">
+			<label><input type="radio" name="gender" value="male" class="m1"/></label>
+			<label><input type="radio" name="gender" value="female" class="f1"/></label>
+			<label><input type="radio" name="gender" value="other" class="o1"/></label>
+		</div>
+
+		<div class="gend">
+			<p class="m">Male</p>
+			<p class="f">Female</p>
+			<p class="o">Other</p>
+		</div>
+		
+		<p class="enterInterest">Interesets:</p>
+
+		<div class="inputInterest">
+			<label><input type="checkbox" name="sports" value="interest1" class="i1"/></label>
+			<label><input type="checkbox" name="music" value="interest2" class="i2"/></label>
+			<label><input type="checkbox" name="travel" value="interest3" class="i3"/></label>
+		</div>
+
+		<div class="category">
+			<p class="c1">Sports</p>
+			<p class="c2">Music</p>
+			<p class="c3">Travel</p>
+		</div>
+
+		<div class="enterCountry">
+			<label for="countries">Country:</label><br>
+			<select name="countries" id = "countries" class="inputCountry">
+				<option value="USA">USA</option>
+				<option value="Georgia">Georgia</option>
+				<option value="Norway">Norway</option>
+				<option value="Canada">Canada</option>
+				<option value="Sweden">Sweden</option>
+			</select>
+		</div>
+
+		
+
+		<div class="SlidePointer">
+			<label for="myRange">Choose a Value:</label><br>
+			<input type="range" min="0" max="100" value="50"  id="myRange" class="slider">
+			<p class="value"><span id ="count"></span></p>
+		</div>
+
+		
+		
+		<div class="enter">
+			<input type="submit" class="Submit"  onclick="checker()">
+		</div>
+
+		<script>
+			function checker(){
+				var password = document.getElementById('password').value;
+				var confirm_password = document.getElementById("confirm").value;
+				if(password != confirm_password){
+					alert("\password isn't the same as confirm_password, please enter again");
+					event.preventDefault();
+					return false;
+				}else return true;
+			}
+		</script>
+		
+		<script>
+			var slider = document.getElementById("myRange");
+			var output = document.getElementById("count");
+			output.innerHTML = slider.value;
+
+			slider.oninput = function(){
+				output.innerHTML = this.value;
+			}
+		</script>
+
+		
+	</form>
+</body>
+</html>
